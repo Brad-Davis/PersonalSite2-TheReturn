@@ -1,0 +1,118 @@
+
+
+.fullBackground{
+    width: 200%;
+    height: 100vh;
+    white-space: pre-wrap;
+    background: url('../../public/img/city.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+.introText{
+    font-size: 5em;
+    color: white;
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translate(-0%, -50%);
+}
+
+.navbar{
+    position: absolute !important;
+    display: block !important;
+  font-size: 1em;
+  bottom: 20px;
+  left: 50%;
+  bottom: 20px;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  text-align: center;
+  margin: 0 auto;
+  overflow:auto;
+  clear:both;
+  color: white;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+.splitSection{
+    display: flex;
+    flex-direction: row;
+}
+
+.splitSection>div{
+    width: 50%;
+}
+
+.splitSection div.text{
+    box-sizing: border-box;
+    padding: 60px;
+    font-size: 1.5em;
+}
+
+.splitSection .fullImage{
+    height: 100vh;
+    background-image: url('../../public/img/About.png');
+    background-size: cover;
+    background-size:100% 100%;
+    overflow: hidden;
+
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+
+}
+
+.splitSection:nth-child(odd){
+    flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 800px){
+    .splitSection{
+        
+        display: block;
+    }
+
+    .splitSection>div{
+        width: 100%;
+    }
+    .splitSection div.text{
+        padding: 30px;
+    }
+
+    .splitSection .fullImage{
+        position: static;
+        height: 100vw;
+    }
+    
+}
+
+.footer{
+    height: 200px;
+    background-color: rgb(10,36,99);
+}
