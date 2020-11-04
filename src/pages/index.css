@@ -116,3 +116,7 @@ html{
     height: 200px;
     background-color: rgb(10,36,99);
 }
+
+.workInformation{
+    padding: 60px;
+}
