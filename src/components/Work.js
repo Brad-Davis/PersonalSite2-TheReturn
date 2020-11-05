@@ -22,10 +22,11 @@ class Work extends React.Component {
             </div>
            <div class="text" style={{padding: '0px'}}>
                 <div class="workContainer">
-                <WorkElement image={Octavate} hiddenId="octavateInfo" image2={OctavatLogo} alt="Octavate Logo" imageId2="octavateLogo" jobTitle="Octavate" 
+                <WorkElement color='white' image={Octavate} hiddenId="octavateInfo" image2={OctavatLogo} alt="Octavate Logo" imageId2="octavateLogo" jobTitle="Octavate" 
                 content="<div class='workInformation'>
                     <h1>Octavate</h1>
                     <h3>March 2019-Present</h3>
+                    <br>
                     <h3><a href='https://octavate.io' target='_blank' class='linkInformation'>Click here to visit our new static website!</a></h3>
                     <br>
                     <p>
@@ -58,9 +59,10 @@ class Work extends React.Component {
                     </p>
                 
                 </div>"  />
-                <WorkElement image={Bruce} alt="Life is In the Transitions Bruce Feiler" hiddenId="bruceInfo" imageId="bruceImage" jobTitle="SlicerDMRI Internship" content="<div class='workInformation'>
+                <WorkElement color="black" image={Bruce} alt="Life is In the Transitions Bruce Feiler" hiddenId="bruceInfo" imageId="bruceImage" jobTitle="SlicerDMRI Internship" content="<div class='workInformation'>
                     <h1>Bruce Feiler</h1>
                     <h3>June 2019-Present</h3>
+                    <br>
                     <h3><a href='https://www.brucefeiler.com/' target='_blank' class='linkInformation'>Click here to visit Bruce's website!</a></h3>
                     <br>
                     <p>
@@ -69,6 +71,18 @@ class Work extends React.Component {
                     on the data of the novel. In his New York Times Best-Seller, Life Is in the Transitions: Mastering Change at Any Age, I created multiple visualizations 
                     that ended up in the pages of the book, based on data from over 200 interviews that I helped collect.
                     </p>
+
+                    <div class='pageSeparator'>
+                        <div class='row' style='padding-left: 30px; padding-right: 30px;'>
+                            <div class='col-xl-6' style='margin-bottom: 30px;'>
+                                Two pages from Bruce Feiler's Life Is in the Transitions which feature 3 of the 25 visualizations featured in the book.
+                            </div>
+                            <div class='col-xl-6'>
+                                <img class='halfWidth' alt='page of Life is In The Transistions with my visualization page 1' src='/img/brucePage.JPG'>
+                                <img class='halfWidth' alt='page of Life is In The Transistions with my visualization page 2' src='/img/brucePage2.JPG'>
+                            </div>
+                        </div>
+                    </div>
                     <p>
                     Images from the book
 
@@ -78,7 +92,7 @@ class Work extends React.Component {
                     </p>
 
                 <div>"  />
-                <WorkElement image={Alex} image2={Alex2} hiddenId="alexInfo" alt="Alex Vrahas Website Gif" imageId2="alexLogo" jobTitle="SlicerDMRI Internship" 
+                <WorkElement color="white" image={Alex} image2={Alex2} hiddenId="alexInfo" alt="Alex Vrahas Website Gif" imageId2="alexLogo" jobTitle="SlicerDMRI Internship" 
                 content="<div class='workInformation'>
                     <h1>Alex Vrahas: Personal Site</h1>
                     <h3>October 2020</h3>
@@ -96,23 +110,45 @@ class Work extends React.Component {
                     </div>
                     
                 </div>"  />
-                <WorkElement image={Prottas} hiddenId="prottasInfo" alt="Prottas Painting Logo" imageId="prottasImage" jobTitle="SlicerDMRI Internship" 
+                <WorkElement color="white" image={Prottas} hiddenId="prottasInfo" alt="Prottas Painting Logo" imageId="prottasImage" jobTitle="SlicerDMRI Internship" 
                 content="<div class='workInformation'>
                     <h1>Prottas Painting Website</h1>
-                    <h3>October 2020</h3>
+                    <h3>January 2019</h3>
                     <h3><a href='https://alexvrahas.com/' target='_blank' class='linkInformation'>Click Here To Check Out The Site</a></h3>
                     <br>
                     <p>
                     This was my first paid website job, and it was a great experience to implement the skills I’d learn in college in a professional context. I was highered by Glenn Prottas who owns a local painting company in the hometown where I grew up. A pretty straightforward static site where design and ease of use became the focus for me.
                     </p>
-                    <p>
-                    My Favorite detail is the map that appears on hover of the location of Glenn Prottas Business
-                    </p>
+                    <div class='pageSeparator'>
+                        <img class='fullWidth' alt='gif of prottas painting website of contact page with map overlay' src='/img/prottasSiteDemo.gif'>
+                        <p class='subTitle'>
+                            My Favorite Feature: on hover appears a map overlay
+                        </p>
+                    </div>
                 </div>"  />
                 <div class="hiddenInfo" id="prottasHidden">
                     
                 </div>
-                <WorkElement image={Slicer} alt="SlicerDMRI logo" hiddenId="slicerInfo" imageId="slicerImage" jobTitle="SlicerDMRI Internship" />
+                <WorkElement color="black" image={Slicer} alt="SlicerDMRI logo" hiddenId="slicerInfo" imageId="slicerImage" jobTitle="SlicerDMRI Internship" 
+                content="<div class='workInformation'>
+                    <h1>SlicerDMRI</h1>
+                    <h3>Summer 2017</h3>
+                    <h3><a href='http://dmri.slicer.org/' target='_blank' class='linkInformation'>Click Here To Check Out SlicerDMRI's site</a></h3>
+                    <br>
+                    <p>
+                    This was my first tech internship in which I took part in the development of an extension to the open source software 3D Slicer called SlicerDMRI. Working with Harvard Medical School and Brigham & Women's Hospital, I took part in the outreach and accessibility of SlicerDMRI focusing mainly on rewriting and reformatting the tutorials to become more accessible to people with limited programming experience. I also made a video outlining the tutorials and uses of SlicerDMRI.
+                    </p>
+                    <div class='pageSeparator'>
+                        <div class='fullWidth'>
+                            <div class='videoContainer'>
+                                <iframe src='https://www.youtube.com/embed/Ml4oS5n2I64' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>
+                            </div>
+                            <p class='subTitle'>
+                                My Favorite Feature: on hover appears a map overlay
+                            </p>
+                        </div>
+                    </div>
+                </div>"  />
                 <div class="hiddenInfo" id="slicerHidden">
                     
                 </div>

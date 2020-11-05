@@ -5,6 +5,8 @@ import Navbar from "./Navbar.js";
 // import fontawesome from '@fortawesome/fontawesome'
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import LinkedIn from "./LinkedIn.js";
+import Instagram from "./instagram.js";
+import Github from "./Github";
 
 
 
@@ -22,7 +24,9 @@ class Contact extends React.Component {
                 <p>
                     I am available for freelance projects and full-time employment.
                 </p>
-                <LinkedIn className="socials" />
+                <a className="socials" target="_blank" href="https://www.linkedin.com/in/brad-camp-davis/"><LinkedIn className="socials" /></a>
+                <a className="socials" target="_blank" href="https://www.instagram.com/braddavistheworst/"><Instagram className="socials" /></a>
+                <a className="socials"  target="_blank" href="https://github.com/Brad-Davis"><Github className="socials" /></a>
                 {/* <FontAwesomeIcon icon={['fab', 'twitter']} />
 
                 <FontAwesomeIcon icon={['fab', 'facebook']} />

@@ -37,7 +37,7 @@ function WorkElement(props) {
                         Click here for more info
                     </a>
                 </div>
-                <Chevron className={`${setRotate}`} />
+                <Chevron color={`${props.color}`} className={`${setRotate}`} />
             </div>
             <div id={props.hiddenId} ref={content} style={{maxHeight: `${setHeight}`}}
                 className="workContent"

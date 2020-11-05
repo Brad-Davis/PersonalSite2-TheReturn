@@ -37,11 +37,5 @@
     display: none !important;
 }
 
-#octavateLogo{
-    background-size: 60%;
-    filter: drop-shadow(-2px 2px 16px rgba(254, 230, 254, 0.45));
-}
 
-.hoverNone{
-    pointer-events: none;
-}
+
