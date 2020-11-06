@@ -127,6 +127,7 @@
 .chevron{
     transform: rotate(-90deg);
     transition: transform 0.6s ease;
+    opacity: 0.7;
     
 }
 
@@ -232,4 +233,24 @@ div .activeBrain{
 
 .hoverNone{
     pointer-events: none;
+}
+
+.logoCenter{
+    position: absolute;
+    top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+}
+
+#aboutTitle path{
+    stroke-dasharray: 1100px;
+    stroke-dashoffset: 1100px;
+    animation: lineAnim 2s ease forwards
+}
+
+@keyframes lineAnim{
+    to{
+        stroke-dashoffset: 0px;
+    }
 }

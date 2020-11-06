@@ -2,6 +2,7 @@ import React, {useState, useRef} from "react";
 import '../pages/index.css' ;
 import './mainPageText.css';
 import Navbar from "./Navbar.js";
+import AboutTitle from "./AboutTitle.js"
 import scrollTo from 'gatsby-plugin-smoothscroll';
 
 if (typeof window !== "undefined") {
@@ -41,7 +42,8 @@ function About(props) {
 
     return <div id={props.id} class="splitSection">
            <div class="fullImage image2">
-                <Navbar />
+                <AboutTitle id="aboutTitle" className="logoCenter" />
+                <Navbar/>
             </div>
            <div class="text">
                

@@ -11,6 +11,7 @@ function NewlineText(props) {
 class Homescreen extends React.Component {
     render(){
         return <div className="fullBackground">
+          <img class="homeBrad" src="/img/BradDavis.png"></img>
         <h1 className="introText">      
           <NewlineText text={"Hi!\nI\'m Brad.\n"} />
           I am a{" "}
@@ -34,6 +35,7 @@ class Homescreen extends React.Component {
     
           </Typical>
         </h1>
+        
         <Navbar />
       </div>
     }
