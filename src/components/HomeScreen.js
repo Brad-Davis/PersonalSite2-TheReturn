@@ -2,6 +2,7 @@ import React from "react"
 import '../pages/index.css' 
 import Typical from 'react-typical'
 import Navbar from "./Navbar.js"
+import Brad from "../images/bradBackgroundCrop2.jpg"
 
 function NewlineText(props) {
     const text = props.text;
@@ -10,8 +11,8 @@ function NewlineText(props) {
 
 class Homescreen extends React.Component {
     render(){
-        return <div className="fullBackground">
-          <img class="homeBrad" src="/img/BradDavis.png"></img>
+        return <div className="fullBackground" style={{backgroundImage: "url(" + Brad + ")"}}>
+          
         <h1 className="introText">      
           <NewlineText text={"Hi!\nI\'m Brad.\n"} />
           I am a{" "}

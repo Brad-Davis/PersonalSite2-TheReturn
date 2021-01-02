@@ -16,33 +16,41 @@ function WorkElement(props) {
         setHeightState(setActive === "active" ? "0px" : `${content.current.scrollHeight}px`);
         setRotateState(setActive === "active" ? "chevron" : "chevron rotate");
         if(setActive !== "active"){
-            scrollTo("#" + props.hiddenId);
+            setTimeout(() => {
+                scrollTo("#" + props.hiddenId);
+            }, 200);
+            
         }
+        
+        
     }
 
+    
 
     return <div>
-            <div class="halfScreen" onClick={toggleWorkContent}>
-                <div class="clickToGo hoverGrow" id={props.imageId} style={{ backgroundImage:`url(${props.image})`}}>
+            <div className="halfScreen" onClick={() => {toggleWorkContent()}}>
+                <div className="clickToGo hoverGrow" id={props.imageId} style={{ backgroundImage:`url(${props.image})`}}>
                     {/* <img src={props.image} alt={props.alt} /> */}
                 </div>
-                <div class="clickToGo hoverNone" id={props.imageId2} style={{ backgroundImage:`url(${props.image2})`}}>
+                <div className="clickToGo hoverNone" id={props.imageId2} style={{ backgroundImage:`url(${props.image2})`}}>
                     {/* <img src={props.image} alt={props.alt} /> */}
                 </div>
-                <div class="centerDiv hiddenInfo">
-                    <div class="jobTitle">
+                <div className="centerDiv hiddenInfo">
+                    <div className="jobTitle">
                         {props.jobTitle}
                     </div>
-                    <a class="moreInfo">
+                    <a className="moreInfo">
                         Click here for more info
                     </a>
                 </div>
                 <Chevron color={`${props.color}`} className={`${setRotate}`} />
+
             </div>
-            <div id={props.hiddenId} ref={content} style={{maxHeight: `${setHeight}`}}
-                className="workContent"
-                dangerouslySetInnerHTML={{__html: props.content}}
-            />
+            
+            <div id={props.hiddenId} ref={content} style={{maxHeight: `${setHeight}`}} className="workContent">
+                {props.children}
+            </div>
+                
         </div>
 }
 

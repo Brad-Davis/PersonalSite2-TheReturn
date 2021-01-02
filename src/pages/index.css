@@ -1,11 +1,25 @@
+/* @font-face {
+	font-family: 'JadenMessy';
+	src: url('//2ttf.com/webfont/IOGm6JrJE8c/webfont.ttf') format('truetype');
+}
 
+
+body{
+	font-family: 'JadenMessy' !important;
+} */
+
+
+body{
+    font-family: 'Walter Turncoat', cursive !important;
+}
 
 .fullBackground{
-    width: 200%;
     height: 100vh;
     white-space: pre-wrap;
     background-color: #0A2463;
+    background-position: right bottom;
     /* no-repeat center center fixed  */
+    background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -13,6 +27,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  border: solid 10px #30BCED;
 }
 
 html{
@@ -21,7 +36,7 @@ html{
 
 .introText{
     font-size: 5em;
-    color: white;
+    color: #0A2463;
     position: absolute;
     left: 10%;
     top: 50%;
@@ -33,6 +48,7 @@ html{
     display: block !important;
   font-size: 1.5em;
   bottom: 20px;
+  width: 100%;
   left: 50%;
   bottom: 20px;
   transform: translate(-50%, -50%);
@@ -43,6 +59,22 @@ html{
   clear:both;
   color: white;
 }
+
+
+.workInformation a{
+    color: #ECA72C;
+    text-decoration: none !important;
+    cursor: pointer;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+
+.workInformation a:hover{
+    color: #30BCED;
+}
+
+
+
 
 .navbar a{
     color: white;
@@ -75,7 +107,7 @@ html{
     height: 3px;
     width: 0%;
     content: "";
-    background-color: #2980b9;
+    background-color: #ffffff;
   }
   .navbar a:after {
     left: 0;
@@ -128,7 +160,8 @@ html{
 
 .splitSection .fullImage{
     height: 100vh;
-    background-color: #30BCED;
+    background-color: #0A2463;
+    border: solid 10px #30BCED;
     background-size: cover;
     background-size:100% 100%;
     overflow: hidden;
@@ -143,7 +176,15 @@ html{
     flex-direction: row-reverse;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 1000px){
+
+    .introText{
+        font-size: 2em;
+        left: 10%;
+        top: 15%;
+        transform: none;
+    }
+    
     .splitSection{
         
         display: block;
@@ -160,8 +201,14 @@ html{
         position: static;
         height: 100vw;
     }
+
+    .fullBackground{
+        background-attachment: scroll;
+    }
+
     
 }
+
 
 .footer{
     height: 200px;
@@ -170,20 +217,9 @@ html{
 
 .workInformation{
     padding: 60px;
+    padding-bottom: 0px;
 }
 
-.homeBrad{
-    position: absolute;
-    border-radius: 50%;
-    z-index: 0;
-    right: 10%;
-    border: 10px solid #FFC800;
-}
-
-@media only screen and (max-width: 1300px) {
-    .homeBrad {
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
+.readable{
+    font-family: 'Josefin Sans', sans-serif !important;
 }
