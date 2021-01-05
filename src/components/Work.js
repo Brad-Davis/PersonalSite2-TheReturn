@@ -68,12 +68,14 @@ class Work extends React.Component {
                         </p>
                         <br/>
                         <div className='pageSeparator'>
-                            <h3 className='sepTitle'>Octavate</h3>
-                            <h5 className='sepSubtitle'>Marketing Showcase Video</h5>
-                            <div className='video-container'>
-                                <iframe className='rowPadding dropShadow' src='https://www.youtube.com/embed/WqO98ubfXPU' frameborder='0'
-                                    allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'
-                                    allowFullscreen></iframe>
+                            <div className='fullWidth'>
+                                <h3 className='sepTitle'>Octavate</h3>
+                                <h5 className='sepSubtitle'>Marketing Showcase Video</h5>
+                                <div className='video-container'>
+                                    <iframe className='dropShadow' src='https://www.youtube.com/embed/WqO98ubfXPU' frameborder='0'
+                                        allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'
+                                        allowFullscreen></iframe>
+                                </div>
                             </div>
                         </div>
                         <br/>

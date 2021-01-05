@@ -8,6 +8,8 @@ import { Helmet } from "react-helmet"
 // import SlideShow from '../components/SlideShow.js';
 // import Footer from '../components/Footer.js'
 
+//TO EXPORT TO GITHUB PAGES USE COMMAND NPM RUN DEPLOY THEN ON GITHUB PAGES FIX CNAME FIX WOULD BE GREAT FOR THAT
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
