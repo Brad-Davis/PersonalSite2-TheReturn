@@ -6,6 +6,11 @@
 
 module.exports = {
   /* Your site config here */
+  siteMetadata: {
+    title: `Hi! I'm Brad!`,
+    description: `This is my personal site I built using gatsby! I am a web developer living in Brooklyn who graduated from NYU this past summer as a computer science major. Learn all about me and my work here!`,
+    author: `Brad Davis`
+  },
   pathPrefix: "/",
   plugins: [
     {
@@ -17,7 +22,7 @@ module.exports = {
         ],
       },
     },
-    `gatsby-plugin-scroll-reveal`, `gatsby-plugin-fontawesome-css`, `gatsby-plugin-smoothscroll`, `gatsby-plugin-react-helmet`, 
+    `gatsby-plugin-scroll-reveal`, `gatsby-plugin-catch-links`, `gatsby-plugin-fontawesome-css`, `gatsby-plugin-smoothscroll`, `gatsby-plugin-react-helmet`, 
   {
     resolve: "gatsby-plugin-antd",
     options: {
@@ -29,6 +34,26 @@ module.exports = {
     options: {
       javascriptEnabled: true,
     },
+  },
+  {
+    resolve: `gatsby-source-filesystem`,
+    options: {
+      path: `${__dirname}/src/images/`,
+      name: "images"
+    }
+  },
+  {
+    resolve: `gatsby-source-filesystem`,
+    options: {
+      name: `blog`,
+      path: `${__dirname}/src/blog/`,
+    },
+  },
+  {
+    resolve: "gatsby-transformer-remark",
+    options: {
+      plugins: [] // just in case those previously mentioned remark plugins sound cool :)
+    }
   },
   {
     resolve: 'gatsby-plugin-web-font-loader',
