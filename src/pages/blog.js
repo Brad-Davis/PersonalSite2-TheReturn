@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 
 export default function Blog({ data }) {
   const { posts } = data.blog
@@ -10,8 +10,12 @@ export default function Blog({ data }) {
 
       {posts.map(post => (
         <article key={post.id}>
-          <h2>{post.frontmatter.title}</h2>
-          <small>{post.frontmatter.author}, {post.frontmatter.date}</small>
+          <Link to={"/blog" + post.fields.slug}>
+            <h2>{post.frontmatter.title}</h2>
+          </Link>
+          <small>
+            {post.frontmatter.author}, {post.frontmatter.date}
+          </small>
           <p>{post.excerpt}</p>
         </article>
       ))}
@@ -23,6 +27,9 @@ export const pageQuery = graphql`
   query MyQuery {
     blog: allMarkdownRemark {
       posts: nodes {
+        fields {
+          slug
+        }
         frontmatter {
           date(fromNow: true)
           title
