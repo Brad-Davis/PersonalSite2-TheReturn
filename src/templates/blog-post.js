@@ -1,16 +1,31 @@
 import React from "react";
 import { graphql } from "gatsby";
+import Img from "gatsby-image";
+import NavbarBlog from "../components/NavbarBlog.js";
+import BlogTitle from '../components/BlogTitle.js';
+import '../pages/index.css';
 
 export default function BlogPost({ data }) {
-    const post = data.markdownRemark;
+  let post = data.markdownRemark;
+  let featuredImgFluid = post.frontmatter.featuredImage.childImageSharp.fluid;
 
-    return (
+  return (
+    <div>
+      <div className="container">
         <div>
-            <h1>{post.frontmatter.title}</h1>
-            <small>{post.frontmatter.date}</small>
-            <div dangerouslySetInnerHTML={{ __html: post.html }} />
+          <div className="blogNav">
+            <BlogTitle />
+            <NavbarBlog />
+          </div>
+          <Img className="blogImage" fluid={featuredImgFluid} />
         </div>
-    )
+        <h1>{post.frontmatter.title}</h1>
+        <small>{post.frontmatter.author}, {post.frontmatter.date}</small>
+        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+      </div>
+
+    </div>
+  )
 }
 export const query = graphql`
   query BlogQuery($slug: String!) {
@@ -18,7 +33,15 @@ export const query = graphql`
       html
       frontmatter {
         title
-        date
+        author
+        date(formatString: "MMMM DD, YYYY")
+        featuredImage {
+          childImageSharp {
+            fluid(maxWidth: 800) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
   }

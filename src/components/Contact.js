@@ -1,5 +1,5 @@
 import React from "react";
-import '../pages/index.css' ;
+import '../pages/index.css';
 import './mainPageText.css';
 import Navbar from "./Navbar.js";
 // import fontawesome from '@fortawesome/fontawesome'
@@ -12,16 +12,16 @@ import ContactTitle from "./ContactTitle.js"
 
 
 class Contact extends React.Component {
-    
-    render(){
-       return <div id={this.props.id} class="splitSection">
-           <div class="fullImage image2">
+
+    render() {
+        return <div id={this.props.id} class="splitSection">
+            <div class="fullImage image2">
                 <ContactTitle className="logoCenterBig" />
-                <Navbar />
+                <Navbar navClass="navbar" />
             </div>
-           <div class="text">
-               <h1>
-                   Reach out and say hi!
+            <div class="text">
+                <h1>
+                    Reach out and say hi!
                </h1>
                 <p>
                     I am available for freelance projects and full-time employment.
@@ -34,7 +34,7 @@ class Contact extends React.Component {
 
                 <a className="socials" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/brad-camp-davis/"><LinkedIn className="socials" /></a>
                 <a className="socials" target="_blank" rel="noreferrer" href="https://www.instagram.com/braddavistheworst/"><Instagram className="socials" /></a>
-                <a className="socials"  target="_blank" rel="noreferrer" href="https://github.com/Brad-Davis"><Github className="socials" /></a>
+                <a className="socials" target="_blank" rel="noreferrer" href="https://github.com/Brad-Davis"><Github className="socials" /></a>
                 {/* <FontAwesomeIcon icon={['fab', 'twitter']} />
 
                 <FontAwesomeIcon icon={['fab', 'facebook']} />
@@ -43,10 +43,10 @@ class Contact extends React.Component {
 
                 <FontAwesomeIcon icon={['fab', 'github']} /> */}
             </div>
-            
-       </div>
+
+        </div>
     }
-    
+
 }
 
 export default Contact;

@@ -4,7 +4,7 @@ import Homescreen from '../components/HomeScreen.js';
 import About from '../components/About.js';
 import Work from '../components/Work.js';
 import Contact from '../components/Contact.js';
-import { Helmet } from "react-helmet"
+import { Helmet } from "react-helmet";
 // import SlideShow from '../components/SlideShow.js';
 // import Footer from '../components/Footer.js'
 
@@ -18,14 +18,14 @@ export default function Home() {
   return <div>
     <div>
       <Helmet>
-          <meta charSet="utf-8" />
-          <title>Hi, I'm Brad!</title>
-          <link rel="canonical" href="https://bradcampdavis.com/" />
+        <meta charSet="utf-8" />
+        <title>Hi, I'm Brad!</title>
+        <link rel="canonical" href="https://bradcampdavis.com/" />
       </Helmet>
       <Homescreen />
-      <About id="about"/>
-      <Work id="work"/>
-      <Contact id="contact"/>
+      <About id="about" />
+      <Work id="work" />
+      <Contact id="contact" />
     </div>
   </div>
 }

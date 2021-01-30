@@ -1,24 +1,24 @@
 import React from "react"
-import '../pages/index.css' 
+import '../pages/index.css'
 import Typical from 'react-typical'
 import Navbar from "./Navbar.js"
 import Brad from "../images/bradBackgroundCrop2.jpg"
 
 function NewlineText(props) {
-    const text = props.text;
-    return <div>{text}</div>;
+  const text = props.text;
+  return <div>{text}</div>;
 }
 
 class Homescreen extends React.Component {
-    render(){
-        return <div className="fullBackground" style={{backgroundImage: "url(" + Brad + ")"}}>
-          
-        <h1 className="introText">      
-          <NewlineText text={"Hi!\nI\'m Brad.\n"} />
+  render() {
+    return <div className="fullBackground" style={{ backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),url(" + Brad + ")" }}>
+
+      <h1 className="introText">
+        <NewlineText text={"Hi!\nI\'m Brad.\n"} />
           I am a{" "}
-          <Typical
+        <Typical
           loop={Infinity}
-          wrapper="b"
+          wrapper="c"
           steps={[
             'web developer',
             1000,
@@ -33,14 +33,14 @@ class Homescreen extends React.Component {
             "Bostonian at heart",
             1000,
           ]}>
-    
-          </Typical>
-        </h1>
-        
-        <Navbar />
-      </div>
-    }
-    
+
+        </Typical>
+      </h1>
+
+      <Navbar />
+    </div>
+  }
+
 }
 
 export default Homescreen;

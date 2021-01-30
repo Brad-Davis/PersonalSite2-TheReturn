@@ -22,45 +22,46 @@ module.exports = {
         ],
       },
     },
-    `gatsby-plugin-scroll-reveal`, `gatsby-plugin-catch-links`, `gatsby-plugin-fontawesome-css`, `gatsby-plugin-smoothscroll`, `gatsby-plugin-react-helmet`, 
-  {
-    resolve: "gatsby-plugin-antd",
-    options: {
-      style: true,
+    `gatsby-plugin-sharp`, `gatsby-transformer-sharp`, `gatsby-plugin-scroll-reveal`, `gatsby-plugin-catch-links`, `gatsby-plugin-fontawesome-css`, `gatsby-plugin-smoothscroll`, `gatsby-plugin-react-helmet`, `gatsby-plugin-styled-components`,
+    {
+      resolve: "gatsby-plugin-antd",
+      options: {
+        style: true,
+      },
     },
-  },
-  {
-    resolve: "gatsby-plugin-less",
-    options: {
-      javascriptEnabled: true,
+    {
+      resolve: "gatsby-plugin-less",
+      options: {
+        javascriptEnabled: true,
+      },
     },
-  },
-  {
-    resolve: `gatsby-source-filesystem`,
-    options: {
-      path: `${__dirname}/src/images/`,
-      name: "images"
-    }
-  },
-  {
-    resolve: `gatsby-source-filesystem`,
-    options: {
-      name: `blog`,
-      path: `${__dirname}/src/blog/`,
-    },
-  },
-  {
-    resolve: "gatsby-transformer-remark",
-    options: {
-      plugins: [] // just in case those previously mentioned remark plugins sound cool :)
-    }
-  },
-  {
-    resolve: 'gatsby-plugin-web-font-loader',
-    options: {
-      google: {
-        families: ['Walter Turncoat', 'Josefin Sans']
+
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/images/`,
+        name: "images"
       }
-    }
-  }],
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `blog`,
+        path: `${__dirname}/src/blog/`,
+      },
+    },
+    {
+      resolve: "gatsby-transformer-remark",
+      options: {
+        plugins: [] // just in case those previously mentioned remark plugins sound cool :)
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Walter Turncoat', 'Josefin Sans']
+        }
+      }
+    }],
 }
