@@ -7,8 +7,8 @@ class Navbar extends React.Component {
     render() {
         return <div>
             <ul className="navbar">
+                <li><a href="javascript:void(0);" onClick={() => scrollTo("#work")}>Work</a></li>/
                 <li><a href="javascript:void(0);" onClick={() => scrollTo("#about")}>About</a></li>/
-           <li><a href="javascript:void(0);" onClick={() => scrollTo("#work")}>Work</a></li>/
            {/* <a href="#projects">Projects</a>/ */}
                 <li><a href="javascript:void(0);" onClick={() => scrollTo("#contact")}>Contact</a></li>/
                 <li><Link to="/blog">Blog</Link></li>

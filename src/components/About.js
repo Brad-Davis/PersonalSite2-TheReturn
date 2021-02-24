@@ -49,7 +49,7 @@ function About(props) {
                 <AboutTitle id="aboutTitle" className="logoCenter" />
                 <Navbar/>
             </div>
-           <div style={{borderTop: "10px solid #30bced"}}class="text">
+           <div class="text">
                
             <h2>Like I said above: Hi, I’m Brad.</h2>
             <br></br>

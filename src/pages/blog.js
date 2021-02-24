@@ -44,7 +44,7 @@ export default function Blog({ data }) {
         <div className="stickyTop">
           <div className="blogNav row">
             <div className="col-lg-6">
-              <div className="blogTitle">
+              <div data-sal="slide-right" data-sal-delay="300" data-sal-easing="ease" className="blogTitle">
                 BLOG
               </div>
 
@@ -64,14 +64,20 @@ export default function Blog({ data }) {
           <div className="fixedContainer">
             {posts.map(post => (
               <article className="postContainer" key={post.id}>
-                <Link className="postTitle" to={"/blog" + post.fields.slug}>
-                  <h2>{post.frontmatter.title}</h2>
-                </Link>
-                <small>
-                  {post.frontmatter.author}, {post.frontmatter.date}
-                </small>
-                <p>{post.excerpt}</p>
-                <Img style={{ transform: "rotate(" + (Math.random() * 12 - 6) + "deg)" }} className="blogThumbnail" fluid={post.frontmatter.featuredImage.childImageSharp.fluid} />
+                <div className="postText">
+                  <Link className="postTitle" to={"/blog" + post.fields.slug}>
+                    <h2>{post.frontmatter.title}</h2>
+                  </Link>
+                  <small>
+                    {post.frontmatter.author}, {post.frontmatter.date}
+                  </small>
+                  <p>{post.excerpt}</p>
+                </div>
+                <div className="imageContainer">
+                  <Img className="blogThumbnail" fluid={post.frontmatter.featuredImage.childImageSharp.fluid} />
+                </div>
+               
+                {/* style={{ transform: "rotate(" + (Math.random() * 12 - 6) + "deg)" }}  */}
               </article>
             ))}
           </div>

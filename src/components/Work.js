@@ -30,7 +30,7 @@ class Work extends React.Component {
                 <Navbar />
             </div>
            <div className="text" style={{padding: '0px'}}>
-                <div className="workContainer">
+                <div style={{borderTop: "10px solid #30bced"}} className="workContainer">
                 <WorkElement color='white' image={Octavate} hiddenId="octavateInfo" image2={OctavatLogo} alt="Octavate Logo" imageId2="octavateLogo" jobTitle="Octavate">
                     <div className='workInformation'>
                         <h1>Octavate</h1>

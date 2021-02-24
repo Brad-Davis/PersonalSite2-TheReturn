@@ -23,8 +23,8 @@ export default function Home() {
         <link rel="canonical" href="https://bradcampdavis.com/" />
       </Helmet>
       <Homescreen />
-      <About id="about" />
       <Work id="work" />
+      <About id="about" />
       <Contact id="contact" />
     </div>
   </div>
