@@ -45,7 +45,7 @@ export default function Blog({ data }) {
           <div className="blogNav row">
             <div className="col-lg-6">
               <div data-sal="slide-right" data-sal-delay="300" data-sal-easing="ease" className="blogTitle">
-                BLOG
+                <BlogTitle />
               </div>
 
             </div>
@@ -76,10 +76,20 @@ export default function Blog({ data }) {
                 <div className="imageContainer">
                   <Img className="blogThumbnail" fluid={post.frontmatter.featuredImage.childImageSharp.fluid} />
                 </div>
-               
+
                 {/* style={{ transform: "rotate(" + (Math.random() * 12 - 6) + "deg)" }}  */}
               </article>
             ))}
+            <article className="postContainer">
+              <div className="postText">
+                <div className="postTitle">
+                  <h2>More Blog Posts To Come!</h2>
+                </div>
+                <p>I will be working to release a new blog post every 2 weeks on Friday! I'll be posting all my blogs on medium as well.</p>
+              </div>
+
+              {/* style={{ transform: "rotate(" + (Math.random() * 12 - 6) + "deg)" }}  */}
+            </article>
           </div>
         </HorizontalScroll>
       </HorizontalSection>
