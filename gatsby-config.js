@@ -22,7 +22,7 @@ module.exports = {
         ],
       },
     },
-    `gatsby-plugin-sharp`, `gatsby-transformer-sharp`, `gatsby-plugin-scroll-reveal`, `gatsby-plugin-catch-links`, `gatsby-plugin-fontawesome-css`, `gatsby-plugin-smoothscroll`, `gatsby-plugin-react-helmet`, `gatsby-plugin-styled-components`,
+    `gatsby-plugin-sharp`, `gatsby-plugin-anchor-links`, `gatsby-transformer-sharp`, `gatsby-plugin-scroll-reveal`, `gatsby-plugin-catch-links`, `gatsby-plugin-fontawesome-css`, `gatsby-plugin-smoothscroll`, `gatsby-plugin-react-helmet`, `gatsby-plugin-styled-components`,
     {
       resolve: "gatsby-plugin-antd",
       options: {
@@ -35,7 +35,12 @@ module.exports = {
         javascriptEnabled: true,
       },
     },
-
+    {
+      resolve: `gatsby-source-medium`,
+      options: {
+        username: `@bradleycd`,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

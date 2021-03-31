@@ -1,0 +1,86 @@
+.blogThumbnail {
+    position: relative;
+    height: 60%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0 0 2.7em 2.7em;
+    top: 40%;
+}
+
+.postContainer {
+    position: relative;
+    height: 55vh;
+    top: 16em;
+    /* make 100vh with the addition of fixed container */
+    width: 500px;
+    max-height: 550px;
+    max-width: 80vh;
+    border-radius: 3em;
+    background-color: #0A2463;
+    color: white;
+    margin-right: 75px;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    border: 5px solid #30BCED;
+}
+
+.postText {
+    z-index: 15;
+    background-color: #0A2463;
+    padding: 15px 20px 1px 20px;
+    border-radius: 3em 3em 0 0;
+    position: relative;
+}
+
+.postContainer a {
+    color: #30BCED;
+}
+
+.blogHeader {
+    padding-top: 30px;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+.navbarBlog {
+    font-size: 1.35em;
+}
+
+@media screen and (max-width: 1000px) {
+    .blogHeader {
+        padding-top: 0px;
+        font-size: 1.4em;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .navbarBlog {
+        font-size: 1.1em;
+        position: relative !important;
+        text-align: center !important;
+        width: 100%;
+        display: block;
+        transform: none !important;
+    }
+    .postContainer {
+        height: 50vh;
+        top: 22em;
+        width: 300px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .blogThumbnail {
+        height: 40%;
+        top: 60%;
+    }
+    .blogHeader {
+        font-size: 1.15em;
+    }
+    .postTitle h5 {
+        font-size: 1em;
+    }
+    svg {
+        width: 100%;
+    }
+}

@@ -1,19 +1,22 @@
 import React from "react"
 import '../pages/index.css'
-import scrollTo from 'gatsby-plugin-smoothscroll';
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 import { Link } from "gatsby";
 
-class NavbarBlog extends React.Component {
-    render() {
-        return <div className="navbarContainer">
-            <ul className="navbarBlog navbar">
-                <li><Link to="/">Home</Link></li>/
-                <li><a href="javascript:void(0);" onClick={() => scrollTo("#about")}>About</a></li>/
-                <li><a href="javascript:void(0);" onClick={() => scrollTo("#work")}>Work</a></li>/
-                <li><a href="javascript:void(0);" onClick={() => scrollTo("#contact")}>Contact</a></li>
-            </ul>
-        </div>
-    }
+
+function NavbarBlog() {
+
+
+
+    return (<div className="navbarContainer">
+        <ul className="navbarBlog navbar">
+            <li><Link to="/">Home</Link></li>/
+            <li><AnchorLink to="/#work" title="Work">Work</AnchorLink></li>/
+            <li><AnchorLink to="/#about" title="about">About</AnchorLink></li>/
+            <li><AnchorLink to="/#contact" title="contact">contact</AnchorLink></li>
+        </ul>
+    </div>);
+
 
 }
 

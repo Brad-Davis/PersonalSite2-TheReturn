@@ -3,6 +3,7 @@ import '../pages/index.css'
 import Typical from 'react-typical'
 import Navbar from "./Navbar.js"
 import Brad from "../images/bradBackgroundCrop2.jpg"
+import scrollTo from 'gatsby-plugin-smoothscroll';
 
 function NewlineText(props) {
   const text = props.text;
@@ -35,7 +36,12 @@ class Homescreen extends React.Component {
           ]}>
 
         </Typical>
+        <br />
+        <button href="javascript:void(0);" onClick={() => scrollTo("#work")} className="btn callToAction">
+          See My Work <i class="arrow right"></i>
+        </button>
       </h1>
+
 
       <Navbar />
     </div>

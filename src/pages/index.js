@@ -10,6 +10,10 @@ import { Helmet } from "react-helmet";
 
 //TO EXPORT TO GITHUB PAGES USE COMMAND NPM RUN DEPLOY THEN ON GITHUB PAGES FIX CNAME FIX WOULD BE GREAT FOR THAT
 
+//TODOs
+//Make Readme Better
+//Make glitch on contact page go away
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 

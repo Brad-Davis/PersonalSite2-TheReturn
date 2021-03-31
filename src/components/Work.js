@@ -37,7 +37,7 @@ class Work extends React.Component {
                         <h3>Full Stack Developer</h3>
                         <h3>May 2019-Present</h3>
                         <br/>
-                        <p><a href='https://octavate.io' target='_blank' rel="noreferrer" className='linkInformation'>Click here to visit our new static website!</a></p>
+                        <p><a className="link" href='https://octavate.io' target='_blank' rel="noreferrer">Click here to visit our new static website!</a></p>
                         <br/>
                         <p className='readable'>
                         Currently I am working with a music-tech startup called Octavate. On this small team which I have been a part of for over a year 
@@ -89,7 +89,7 @@ class Work extends React.Component {
                         <h3>Web Developer</h3>
                         <h3>June 2019-Present</h3>
                         <br/>
-                        <h3><a href='https://www.brucefeiler.com/' target='_blank' rel="noreferrer" className='linkInformation'>Click here to visit Bruce's website!</a></h3>
+                        <h3><a className="link" href='https://www.brucefeiler.com/' target='_blank' rel="noreferrer">Click here to visit Bruce's website!</a></h3>
                         <br/>
                         <p className="readable">
                         For more than a year and a half now, I've been creating web content for New York Times Best Selling Author and Ted Talk Speaker Bruce Feiler.
@@ -128,7 +128,7 @@ class Work extends React.Component {
                                 
                             </div>
                             <h3 className='sepTitle'>Customized Output of Online Life Story Interview</h3>
-                            <a href='https://www.brucefeiler.com/life-story-online-interview-intro/'><h5 style={{cursor: "pointer"}} className='sepSubtitle'>Click here to try it out!</h5></a>
+                            <a className="link sepSubtitle" href='https://www.brucefeiler.com/life-story-online-interview-intro/'><h5 style={{cursor: "pointer"}} >Click here to try it out!</h5></a>
                              <img className='fullWidth dropShadow' alt="output of demo from bruce site" src={BruceDemo} /> 
                              
                         </div>
@@ -140,7 +140,7 @@ class Work extends React.Component {
                         <h3>Web Developer</h3>
                         <h3>October 2020</h3>
                         <br/>
-                        <h3><a href='https://alexvrahas.com/' target='_blank' rel="noreferrer" className='linkInformation'>Click Here To Check Out The Site</a></h3>
+                        <h3><a className="link" href='https://alexvrahas.com/' target='_blank' rel="noreferrer">Click Here To Check Out The Site</a></h3>
                         <br/>
                         <p className="readable">
                         One of the stranger websites I’ve built, in fact definitely the strangest website I’ve built. Created to reference the hyperactive, gif-centric early days of the internet, this site is a film portfolio to display the work of a friend of mine. He came to me with the idea as well as a basic wireframe and I was tasked with building out and making the site as insane as possible. I think I did a pretty good job!
@@ -160,7 +160,7 @@ class Work extends React.Component {
                         <h3>Web Developer</h3>
                         <h3>January 2019</h3>
                         <br/>
-                        <h3><a href='https://prottaspainting.net/' target='_blank' rel="noreferrer" className='linkInformation'>Click Here To Check Out The Site</a></h3>
+                        <h3><a className="link" href='https://prottaspainting.net/' target='_blank' rel="noreferrer" >Click Here To Check Out The Site</a></h3>
                         <br/>
                         <p className="readable">
                         This was my first paid website job, and it was a great experience to implement the skills I’d learn in college in a professional context. I was highered by Glenn Prottas who owns a local painting company in the hometown where I grew up. A pretty straightforward static site where design and ease of use became the focus for me.
@@ -178,7 +178,7 @@ class Work extends React.Component {
                         <h3>Open Source Developer</h3>
                         <h3>Summer 2017</h3>
                         <br/>
-                        <h3 className="workLink"><a href='http://dmri.slicer.org/' target='_blank' rel="noreferrer" className='linkInformation'>Click Here To Check Out SlicerDMRI's site</a></h3>
+                        <h3 className="workLink"><a className="link" href='http://dmri.slicer.org/' target='_blank' rel="noreferrer" >Click Here To Check Out SlicerDMRI's site</a></h3>
                         <br/>
                         <p className="readable">
                         This was my first tech internship in which I took part in the development of an extension to the open source software 3D Slicer called SlicerDMRI. Working with Harvard Medical School and Brigham & Women's Hospital, I took part in the outreach and accessibility of SlicerDMRI focusing mainly on rewriting and reformatting the tutorials to become more accessible to people with limited programming experience. I also made a video outlining the tutorials and uses of SlicerDMRI.
