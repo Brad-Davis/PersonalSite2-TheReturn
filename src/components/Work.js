@@ -128,8 +128,10 @@ class Work extends React.Component {
                                 
                             </div>
                             <h3 className='sepTitle'>Customized Output of Online Life Story Interview</h3>
-                            <a className="link sepSubtitle" href='https://www.brucefeiler.com/life-story-online-interview-intro/'><h5 style={{cursor: "pointer"}} >Click here to try it out!</h5></a>
-                             <img className='fullWidth dropShadow' alt="output of demo from bruce site" src={BruceDemo} /> 
+                            <div className='centerFlex'>
+                                <a className="link" style={{display: 'block'}} href='https://www.brucefeiler.com/life-story-online-interview-intro/'><h5 style={{cursor: "pointer"}} >Click here to try it out!</h5></a>
+                            </div>
+                            <img className='fullWidth dropShadow' alt="output of demo from bruce site" src={BruceDemo} /> 
                              
                         </div>
                     </div>
