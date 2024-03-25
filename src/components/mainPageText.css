@@ -124,6 +124,25 @@
     filter: drop-shadow(-2px 2px 16px rgba(254, 230, 254, 0.45));
 }
 
+#chubbLogo {
+    background-size: contain;
+    background-color: #00C2D7;
+    background-origin: content-box;
+    padding: 10%;
+}
+
+#googleLogo {
+    background-size: contain;
+    background-origin: content-box;
+    padding: 10%;
+}
+
+#turtleLogo {
+    background-size: contain;
+    background-origin: content-box;
+    padding-bottom: 10%;
+}
+
 #bruceImage{
     background-size: 60%;
     height: 90%;

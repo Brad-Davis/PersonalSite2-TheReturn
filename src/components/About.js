@@ -53,14 +53,14 @@ function About(props) {
 
             <h2>Like I said above: Hi, I’m Brad.</h2>
             <br />
-            <h3><a className="link" target="_blank" href="/BradDavis-Resume2021.pdf">Click here to see my Resume!</a></h3>
+            <h3><a className="link" target="_blank" href="/bradDavisResume.pdf">Click here to see my Resume!</a></h3>
             <br />
             <p className="readable">
-                I am a web developer living in Brooklyn who graduated from NYU this summer as a computer science major.
+                I am a programmer and musician living in Brooklyn.
             </p>
 
             <p className="readable">
-                My love for building websites brought me into the world of design, and throughout my time as a student, I became interested in the artistic world of programming which has since grown into creative side projects and a continued enjoyment of music technology and production.
+                My love for building websites brought me into the world of design. I became interested in the artistic world of programming which has since grown into creative side projects and a continued enjoyment of music technology and production.
             </p>
             <p>
 

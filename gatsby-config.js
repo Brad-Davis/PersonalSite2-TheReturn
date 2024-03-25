@@ -21,8 +21,8 @@ module.exports = {
           "G-5X9QR3PFG"
         ],
       },
-    },
-    `gatsby-plugin-sharp`, `gatsby-plugin-anchor-links`, `gatsby-transformer-sharp`, `gatsby-plugin-scroll-reveal`, `gatsby-plugin-catch-links`, `gatsby-plugin-fontawesome-css`, `gatsby-plugin-smoothscroll`, `gatsby-plugin-react-helmet`, `gatsby-plugin-styled-components`,
+    }
+    , `gatsby-plugin-anchor-links`, `gatsby-plugin-scroll-reveal`, `gatsby-plugin-catch-links`, `gatsby-plugin-fontawesome-css`, `gatsby-plugin-smoothscroll`, `gatsby-plugin-react-helmet`, `gatsby-plugin-styled-components`,
     {
       resolve: "gatsby-plugin-antd",
       options: {

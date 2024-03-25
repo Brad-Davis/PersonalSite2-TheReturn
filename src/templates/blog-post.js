@@ -47,25 +47,25 @@ export default function BlogPost({ data }) {
     </div>
   )
 }
-export const query = graphql`
-  query BlogQuery($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      html
-      frontmatter {
-        title
-        author
-        date(formatString: "MMMM DD, YYYY")
-        tags
-        featuredImage {
-          childImageSharp {
-            fluid(maxWidth: 800) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-      }
-      excerpt
-      id
-    }
-  }
-`;
+// export const query = graphql`
+//   query BlogQuery($slug: String!) {
+//     markdownRemark(fields: { slug: { eq: $slug } }) {
+//       html
+//       frontmatter {
+//         title
+//         author
+//         date(formatString: "MMMM DD, YYYY")
+//         tags
+//         featuredImage {
+//           childImageSharp {
+//             fluid(maxWidth: 800) {
+//               ...GatsbyImageSharpFluid
+//             }
+//           }
+//         }
+//       }
+//       excerpt
+//       id
+//     }
+//   }
+// `;
